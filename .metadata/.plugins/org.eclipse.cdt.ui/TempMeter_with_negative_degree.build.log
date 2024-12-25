@@ -1,0 +1,40 @@
+23:27:33 **** Incremental Build of configuration Debug for project TempMeter_with_negative_degree ****
+make all 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+In file included from ../LCD.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD.c
+ 
+Building target: TempMeter_with_negative_degree.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TempMeter_with_negative_degree.map -mmcu=atmega32 -o "TempMeter_with_negative_degree.elf"  ./ADC_driver.o ./DIO.o ./LCD.o ./TempMeter_with_negative_degree.o   
+Finished building target: TempMeter_with_negative_degree.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TempMeter_with_negative_degree.elf  >"TempMeter_with_negative_degree.lss"
+Finished building: TempMeter_with_negative_degree.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex TempMeter_with_negative_degree.elf  "TempMeter_with_negative_degree.hex"
+Finished building: TempMeter_with_negative_degree.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TempMeter_with_negative_degree.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10722 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        275 bytes (13.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:27:33 Build Finished. 0 errors, 1 warnings. (took 722ms)
+

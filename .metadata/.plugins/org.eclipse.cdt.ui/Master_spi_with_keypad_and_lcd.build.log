@@ -1,0 +1,33 @@
+00:53:09 **** Incremental Build of configuration Debug for project Master_spi_with_keypad_and_lcd ****
+make all 
+Building target: Master_spi_with_keypad_and_lcd.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Master_spi_with_keypad_and_lcd.map -mmcu=atmega32 -o "Master_spi_with_keypad_and_lcd.elf"  ./DIO.o ./SPI_driver.o ./keypad_driver.o ./master.o   
+Finished building target: Master_spi_with_keypad_and_lcd.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Master_spi_with_keypad_and_lcd.elf  >"Master_spi_with_keypad_and_lcd.lss"
+Finished building: Master_spi_with_keypad_and_lcd.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Master_spi_with_keypad_and_lcd.elf  "Master_spi_with_keypad_and_lcd.hex"
+Finished building: Master_spi_with_keypad_and_lcd.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Master_spi_with_keypad_and_lcd.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7048 bytes (21.5% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:53:10 Build Finished. 0 errors, 0 warnings. (took 512ms)
+

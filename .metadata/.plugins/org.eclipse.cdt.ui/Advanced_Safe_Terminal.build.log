@@ -1,0 +1,20 @@
+11:24:47 **** Incremental Build of configuration Release for project Advanced_Safe_Terminal ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Advanced_Safe_Terminal.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10504 bytes (32.1% Full)
+(.text + .data + .bootloader)
+
+Data:        603 bytes (29.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:24:48 Build Finished. 0 errors, 0 warnings. (took 228ms)
+

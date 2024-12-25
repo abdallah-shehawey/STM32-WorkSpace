@@ -1,0 +1,20 @@
+16:47:39 **** Incremental Build of configuration Debug for project Tempmeter_with_negative_temp ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Tempmeter_with_negative_temp.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10474 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:47:40 Build Finished. 0 errors, 0 warnings. (took 163ms)
+

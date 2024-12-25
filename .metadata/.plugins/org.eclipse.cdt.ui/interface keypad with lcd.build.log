@@ -1,0 +1,21 @@
+20:10:31 **** Incremental Build of configuration Debug for project interface keypad with lcd ****
+make all 
+Building file: ../interface keypad with lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"interface keypad with lcd.d" -MT"interface keypad with lcd.o" -c -o "interface keypad with lcd.o" "../interface keypad with lcd.c"
+In file included from ../interface keypad with lcd.c:3:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD.h:28: warning: 'send_falling_edge' declared 'static' but never defined
+Finished building: ../interface keypad with lcd.c
+ 
+Building target: interface keypad with lcd.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,interface keypad with lcd.map -mmcu=atmega32 -o "interface keypad with lcd.elf"  ./DIO.o ./LCD.o ./interface\ keypad\ with\ lcd.o ./keypad_driver.o   
+avr-gcc.exe: keypad: No such file or directory
+avr-gcc.exe: with: No such file or directory
+avr-gcc.exe: lcd.map: No such file or directory
+make: *** [interface keypad with lcd.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+20:10:32 Build Failed. 1 errors, 2 warnings. (took 482ms)
+

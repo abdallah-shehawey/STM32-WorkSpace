@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 13, 2024
+ *      Author: Mega
+ */
+
+#include "SW_interface.h"
+#include "LED_interface.h"
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
+#include "STD_TYPES.h"
+#include "STD_MACROS.h"
+
+int main()
+{
+	SW_Config SW0 = {PORTA, PIN0, SW_INT_PULL_UP};
+	GIE_vEnable();
+	while (1)
+	{
+
+	}
+}

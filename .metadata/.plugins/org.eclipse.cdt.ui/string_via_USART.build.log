@@ -1,0 +1,25 @@
+02:45:00 **** Incremental Build of configuration Debug for project string_via_USART ****
+make all 
+Building target: string_via_USART.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,string_via_USART.map -mmcu=atmega32 -o "string_via_USART.elf"  ./send_string_using_USART/USART.o ./send_string_using_USART/send\ string\ using\ USART.o  ./receive_string_using_USART/DIO.o ./receive_string_using_USART/LCD.o ./receive_string_using_USART/USART.o ./receive_string_using_USART/receive\ string\ using\ USART.o   
+./receive_string_using_USART/USART.o: In function `UART_vInit':
+../receive_string_using_USART/USART.c:14: multiple definition of `UART_vInit'
+./send_string_using_USART/USART.o:../send_string_using_USART/USART.c:14: first defined here
+./receive_string_using_USART/USART.o: In function `UART_vInit':
+../receive_string_using_USART/USART.c:14: multiple definition of `UART_vSendData'
+./send_string_using_USART/USART.o:../send_string_using_USART/USART.c:14: first defined here
+./receive_string_using_USART/USART.o: In function `UART_vInit':
+../receive_string_using_USART/USART.c:14: multiple definition of `UART_u8ReceiveData'
+./send_string_using_USART/USART.o:../send_string_using_USART/USART.c:14: first defined here
+./receive_string_using_USART/USART.o: In function `UART_vInit':
+../receive_string_using_USART/USART.c:14: multiple definition of `UART_vSendstring'
+./send_string_using_USART/USART.o:../send_string_using_USART/USART.c:14: first defined here
+./receive_string_using_USART/receive string using USART.o: In function `main':
+../receive_string_using_USART/receive string using USART.c:11: multiple definition of `main'
+./send_string_using_USART/send string using USART.o:../send_string_using_USART/send string using USART.c:13: first defined here
+make: *** [string_via_USART.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+02:45:00 Build Failed. 11 errors, 0 warnings. (took 255ms)
+

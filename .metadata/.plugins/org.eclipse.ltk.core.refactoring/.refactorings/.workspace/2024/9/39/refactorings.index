@@ -1,0 +1,5 @@
+1727224152142	Delete resource 'Smart_Home_Master/MCAL_Layer/ADC'
+1727224183804	Delete resource 'Smart_Home_Master/HAL_Layer/LM35'
+1727225006037	Delete resource 'Smart_Home_Master/HAL_Layer/SERVO_MOTOR'
+1727225010980	Delete resource 'Smart_Home_Master/HAL_Layer/SW'
+1727225602037	Delete resource 'Smart_Home_Slave/HAL_Layer/SW'

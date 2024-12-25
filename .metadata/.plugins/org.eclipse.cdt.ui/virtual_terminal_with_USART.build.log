@@ -1,0 +1,20 @@
+05:31:44 **** Incremental Build of configuration Release for project virtual_terminal_with_USART ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 virtual_terminal_with_USART.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1892 bytes (5.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+05:31:44 Build Finished. 0 errors, 0 warnings. (took 164ms)
+

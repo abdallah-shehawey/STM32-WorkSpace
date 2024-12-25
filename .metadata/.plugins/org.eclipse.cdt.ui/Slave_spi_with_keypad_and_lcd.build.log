@@ -1,0 +1,33 @@
+00:53:10 **** Incremental Build of configuration Debug for project Slave_spi_with_keypad_and_lcd ****
+make all 
+Building target: Slave_spi_with_keypad_and_lcd.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Slave_spi_with_keypad_and_lcd.map -mmcu=atmega32 -o "Slave_spi_with_keypad_and_lcd.elf"  ./DIO.o ./LCD.o ./SPI_driver.o ./slave.o   
+Finished building target: Slave_spi_with_keypad_and_lcd.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Slave_spi_with_keypad_and_lcd.elf  >"Slave_spi_with_keypad_and_lcd.lss"
+Finished building: Slave_spi_with_keypad_and_lcd.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Slave_spi_with_keypad_and_lcd.elf  "Slave_spi_with_keypad_and_lcd.hex"
+Finished building: Slave_spi_with_keypad_and_lcd.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Slave_spi_with_keypad_and_lcd.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9900 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:53:10 Build Finished. 0 errors, 0 warnings. (took 510ms)
+

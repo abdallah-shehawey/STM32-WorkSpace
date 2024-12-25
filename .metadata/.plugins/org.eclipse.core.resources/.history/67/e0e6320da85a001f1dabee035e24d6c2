@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 13, 2024
+ *      Author: Mega
+ */
+
+
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
+#include "STD_TYPES.h"
+#include "STD_MACROS.h"
+
+int main()
+{
+
+	GIE_vEnable();
+	while (1)
+	{
+
+	}
+}

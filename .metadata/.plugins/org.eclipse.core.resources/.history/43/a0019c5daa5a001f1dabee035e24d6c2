@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 13, 2024
+ *      Author: Mega
+ */
+
+#include "LED_interface.h"
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
+#include "STD_TYPES.h"
+#include "STD_MACROS.h"
+
+int main()
+{
+	LED_config LED0 = {PORTA, PIN0, ACTIVE_HIGH};
+	LED_config LED1 = {PORTA, PIN1, ACTIVE_HIGH};
+	LED_config LED2 = {PORTA, PIN2, ACTIVE_HIGH};
+	GIE_vEnable();
+	LED_vInit(LED0);
+	LED_vInit(LED1);
+	LED_vInit(LED2);
+	EXTI_vEnableInterrupt(EXTI_LINE0);
+	EXTI_vEnableInterrupt(EXTI_LINE1);
+	EXTI_vEnableInterrupt(EXTI_LINE2);
+	while (1)
+	{
+
+	}
+}

@@ -1,0 +1,7 @@
+21:27:47 **** Clean-only build of configuration Debug for project slave_receive_char ****
+make clean 
+rm -rf  slave_receive_char.hex  ./DIO.o ./LCD.o ./SPI_driver.o ./slave\ receive\ char.o  sizedummy  slave_receive_char.lss  ./DIO.d ./LCD.d ./SPI_driver.d ./slave\ receive\ char.d  slave_receive_char.elf
+ 
+
+21:27:47 Build Finished. 0 errors, 0 warnings. (took 210ms)
+

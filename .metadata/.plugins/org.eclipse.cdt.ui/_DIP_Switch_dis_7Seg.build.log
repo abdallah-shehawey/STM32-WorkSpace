@@ -1,0 +1,20 @@
+03:16:03 **** Incremental Build of configuration Debug for project _DIP_Switch_dis_7Seg ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 _DIP_Switch_dis_7Seg.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3958 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+03:16:03 Build Finished. 0 errors, 0 warnings. (took 153ms)
+

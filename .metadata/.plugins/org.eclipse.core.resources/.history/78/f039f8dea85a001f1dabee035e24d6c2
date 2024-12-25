@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 13, 2024
+ *      Author: Mega
+ */
+
+#include "LED_interface.h"
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
+#include "STD_TYPES.h"
+#include "STD_MACROS.h"
+
+int main()
+{
+	LED_Config LED0 = {PORTA, PIN0, ACTIVE_HIGH};
+	GIE_vEnable();
+	while (1)
+	{
+
+	}
+}

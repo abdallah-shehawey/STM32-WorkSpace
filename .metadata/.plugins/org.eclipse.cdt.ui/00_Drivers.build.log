@@ -1,0 +1,11 @@
+03:16:25 **** Incremental Build of configuration Debug for project 00_Drivers ****
+make all 
+Building file: ../5_Free_RTOS/FreeRTOS_First/PORT_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"5_Free_RTOS/FreeRTOS_First/PORT_program.d" -MT"5_Free_RTOS/FreeRTOS_First/PORT_program.o" -c -o "5_Free_RTOS/FreeRTOS_First/PORT_program.o" "../5_Free_RTOS/FreeRTOS_First/PORT_program.c"
+../5_Free_RTOS/FreeRTOS_First/PORT_program.c:15:27: error: PORT_register.h: No such file or directory
+make: *** [5_Free_RTOS/FreeRTOS_First/PORT_program.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+03:16:25 Build Failed. 2 errors, 0 warnings. (took 360ms)
+

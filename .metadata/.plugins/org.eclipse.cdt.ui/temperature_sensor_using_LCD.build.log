@@ -1,0 +1,20 @@
+18:26:31 **** Incremental Build of configuration Debug for project temperature_sensor_using_LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 temperature_sensor_using_LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10708 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:        275 bytes (13.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:26:31 Build Finished. 0 errors, 0 warnings. (took 153ms)
+

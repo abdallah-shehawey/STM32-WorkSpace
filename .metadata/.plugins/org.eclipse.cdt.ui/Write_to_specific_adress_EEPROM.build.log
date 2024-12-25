@@ -1,0 +1,20 @@
+22:32:23 **** Incremental Build of configuration Debug for project Write_to_specific_adress_EEPROM ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Write_to_specific_adress_EEPROM.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     290 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:32:23 Build Finished. 0 errors, 0 warnings. (took 157ms)
+

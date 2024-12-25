@@ -1,0 +1,39 @@
+20:35:32 **** Incremental Build of configuration Debug for project Smart_Garage ****
+make all 
+Building file: ../APP_Layer/Smart_Garage.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP_Layer/Smart_Garage.d" -MT"APP_Layer/Smart_Garage.o" -c -o "APP_Layer/Smart_Garage.o" "../APP_Layer/Smart_Garage.c"
+../APP_Layer/Smart_Garage.c:17: warning: return type of 'main' is not 'int'
+Finished building: ../APP_Layer/Smart_Garage.c
+ 
+Building target: Smart_Garage.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Garage.map -mmcu=atmega32 -o "Smart_Garage.elf"  ./MCAL_Layer/USART/USART_prog.o  ./MCAL_Layer/TIMER/TIMER_program.o  ./MCAL_Layer/EEPROM/EEPROM_prog.o  ./MCAL_Layer/DIO/DIO_prog.o  ./HAL_Layer/SSD/SSD_prog.o  ./HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.o  ./HAL_Layer/CLCD/CLCD_prog.o  ./APP_Layer/Smart_Garage.o   
+Finished building target: Smart_Garage.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Garage.elf  >"Smart_Garage.lss"
+Finished building: Smart_Garage.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Garage.elf  "Smart_Garage.hex"
+Finished building: Smart_Garage.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Garage.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   17784 bytes (54.3% Full)
+(.text + .data + .bootloader)
+
+Data:        299 bytes (14.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+20:35:32 Build Finished. 0 errors, 1 warnings. (took 661ms)
+

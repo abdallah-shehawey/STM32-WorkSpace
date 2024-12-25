@@ -1,0 +1,38 @@
+05:55:14 **** Incremental Build of configuration Debug for project Timer_CTC_interrupt ****
+make all 
+Building file: ../Timer_CTC_interrupt.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Timer_CTC_interrupt.d" -MT"Timer_CTC_interrupt.o" -c -o "Timer_CTC_interrupt.o" "../Timer_CTC_interrupt.c"
+Finished building: ../Timer_CTC_interrupt.c
+ 
+Building target: Timer_CTC_interrupt.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Timer_CTC_interrupt.map -mmcu=atmega32 -o "Timer_CTC_interrupt.elf"  ./DIO.o ./LED.o ./Timer_CTC_interrupt.o ./timer.o   
+Finished building target: Timer_CTC_interrupt.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Timer_CTC_interrupt.elf  >"Timer_CTC_interrupt.lss"
+Finished building: Timer_CTC_interrupt.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Timer_CTC_interrupt.elf  "Timer_CTC_interrupt.hex"
+Finished building: Timer_CTC_interrupt.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Timer_CTC_interrupt.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2754 bytes (8.4% Full)
+(.text + .data + .bootloader)
+
+Data:          4 bytes (0.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+05:55:15 Build Finished. 0 errors, 0 warnings. (took 665ms)
+

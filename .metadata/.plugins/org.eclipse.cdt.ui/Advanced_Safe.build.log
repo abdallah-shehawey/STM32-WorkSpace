@@ -1,0 +1,86 @@
+21:18:21 **** Incremental Build of configuration Release for project Advanced_Safe ****
+make all 
+Building file: ../APP_Layer/SECURITY/SECURITY_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP_Layer/SECURITY/SECURITY_prog.d" -MT"APP_Layer/SECURITY/SECURITY_prog.o" -c -o "APP_Layer/SECURITY/SECURITY_prog.o" "../APP_Layer/SECURITY/SECURITY_prog.c"
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'EEPROM_vInit':
+../APP_Layer/SECURITY/SECURITY_prog.c:69: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:87: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'UserName_Set':
+../APP_Layer/SECURITY/SECURITY_prog.c:118: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:120: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:124: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:148: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:150: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:152: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:155: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:169: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c:181: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:183: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:187: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:281: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'PassWord_Set':
+../APP_Layer/SECURITY/SECURITY_prog.c:377: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:379: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:383: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:404: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:406: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:408: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:411: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:425: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c:437: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:439: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:443: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:549: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'UserName_Check':
+../APP_Layer/SECURITY/SECURITY_prog.c:644: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:734: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'PassWord_Check':
+../APP_Layer/SECURITY/SECURITY_prog.c:849: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:935: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'Sign_In':
+../APP_Layer/SECURITY/SECURITY_prog.c:1053: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:1055: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:1069: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:1083: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:1100: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c:1102: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/SECURITY/SECURITY_prog.c: In function 'Error_TimeOut':
+../APP_Layer/SECURITY/SECURITY_prog.c:1122: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+Finished building: ../APP_Layer/SECURITY/SECURITY_prog.c
+ 
+Building target: Advanced_Safe.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Advanced_Safe.map -mmcu=atmega32 -o "Advanced_Safe.elf"  ./MCAL_Layer/USART/USART_prog.o  ./MCAL_Layer/EEPROM/EEPROM_prog.o  ./MCAL_Layer/DIO/DIO_prog.o  ./HAL_Layer/KPD/KPD_prog.o  ./HAL_Layer/CLCD/CLCD_prog.o  ./APP_Layer/SECURITY/SECURITY_prog.o  ./APP_Layer/Advanced_Safe.o   
+Finished building target: Advanced_Safe.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Advanced_Safe.elf  >"Advanced_Safe.lss"
+Finished building: Advanced_Safe.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Advanced_Safe.elf  "Advanced_Safe.hex"
+Finished building: Advanced_Safe.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex Advanced_Safe.elf  "Advanced_Safe.eep"
+Finished building: Advanced_Safe.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Advanced_Safe.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11416 bytes (34.8% Full)
+(.text + .data + .bootloader)
+
+Data:        617 bytes (30.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:18:22 Build Finished. 0 errors, 37 warnings. (took 872ms)
+

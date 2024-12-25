@@ -1,0 +1,20 @@
+21:09:10 **** Incremental Build of configuration Debug for project RTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   32180 bytes (98.2% Full)
+(.text + .data + .bootloader)
+
+Data:        828 bytes (40.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:09:10 Build Finished. 0 errors, 0 warnings. (took 264ms)
+

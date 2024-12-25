@@ -1,0 +1,44 @@
+00:00:41 **** Incremental Build of configuration Release for project RTOS_Semaphore ****
+make all 
+Building file: ../semaphore.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"semaphore.d" -MT"semaphore.o" -c -o "semaphore.o" "../semaphore.c"
+../semaphore.c:3:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../semaphore.c
+ 
+Building target: RTOS_Semaphore.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_Semaphore.map -mmcu=atmega32 -o "RTOS_Semaphore.elf"  ./DIO.o ./event_groups.o ./heap_2.o ./list.o ./port.o ./queue.o ./semaphore.o ./tasks.o   
+Finished building target: RTOS_Semaphore.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_Semaphore.elf  >"RTOS_Semaphore.lss"
+Finished building: RTOS_Semaphore.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_Semaphore.elf  "RTOS_Semaphore.hex"
+Finished building: RTOS_Semaphore.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex RTOS_Semaphore.elf  "RTOS_Semaphore.eep"
+Finished building: RTOS_Semaphore.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_Semaphore.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10160 bytes (31.0% Full)
+(.text + .data + .bootloader)
+
+Data:        964 bytes (47.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:00:41 Build Finished. 0 errors, 1 warnings. (took 888ms)
+

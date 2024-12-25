@@ -1,0 +1,20 @@
+15:12:46 **** Incremental Build of configuration Debug for project Simple_Game ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Simple_Game.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10640 bytes (32.5% Full)
+(.text + .data + .bootloader)
+
+Data:         68 bytes (3.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:12:46 Build Finished. 0 errors, 0 warnings. (took 154ms)
+

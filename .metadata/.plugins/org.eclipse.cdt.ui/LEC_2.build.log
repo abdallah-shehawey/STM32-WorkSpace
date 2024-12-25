@@ -1,0 +1,20 @@
+23:22:45 **** Incremental Build of configuration Debug for project LEC_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LEC_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3422 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:22:45 Build Finished. 0 errors, 0 warnings. (took 237ms)
+

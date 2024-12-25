@@ -1,0 +1,20 @@
+04:31:33 **** Incremental Build of configuration Debug for project interrupt_with_EEPROM ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 interrupt_with_EEPROM.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5638 bytes (17.2% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+04:31:33 Build Finished. 0 errors, 0 warnings. (took 155ms)
+

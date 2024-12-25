@@ -1,0 +1,20 @@
+04:19:47 **** Incremental Build of configuration Debug for project lavvv ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 lavvv.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     156 bytes (0.5% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+04:19:47 Build Finished. 0 errors, 0 warnings. (took 159ms)
+

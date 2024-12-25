@@ -1,0 +1,40 @@
+02:20:26 **** Incremental Build of configuration Debug for project Stepper_Motor ****
+make all 
+Building file: ../stepper motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"stepper motor.d" -MT"stepper motor.o" -c -o "stepper motor.o" "../stepper motor.c"
+In file included from ../stepper motor.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../stepper motor.c
+ 
+Building target: Stepper_Motor.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Stepper_Motor.map -mmcu=atmega32 -o "Stepper_Motor.elf"  ./stepper\ motor.o   
+Finished building target: Stepper_Motor.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Stepper_Motor.elf  >"Stepper_Motor.lss"
+Finished building: Stepper_Motor.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Stepper_Motor.elf  "Stepper_Motor.hex"
+Finished building: Stepper_Motor.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Stepper_Motor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4046 bytes (12.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:20:27 Build Finished. 0 errors, 1 warnings. (took 675ms)
+

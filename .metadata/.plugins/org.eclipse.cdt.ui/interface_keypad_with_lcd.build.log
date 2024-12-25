@@ -1,0 +1,20 @@
+19:50:17 **** Incremental Build of configuration Debug for project interface_keypad_with_lcd ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 interface_keypad_with_lcd.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9868 bytes (30.1% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:50:18 Build Finished. 0 errors, 0 warnings. (took 228ms)
+

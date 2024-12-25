@@ -1,0 +1,38 @@
+04:28:17 **** Incremental Build of configuration Release for project The Safe ****
+make all 
+Building file: ../CLCD_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"CLCD_prog.d" -MT"CLCD_prog.o" -c -o "CLCD_prog.o" "../CLCD_prog.c"
+../CLCD_prog.c: In function 'CLCD_vSetPosition':
+../CLCD_prog.c:366: warning: 'LOC_u8Data' may be used uninitialized in this function
+Finished building: ../CLCD_prog.c
+ 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../EEPROM_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EEPROM_prog.d" -MT"EEPROM_prog.o" -c -o "EEPROM_prog.o" "../EEPROM_prog.c"
+Finished building: ../EEPROM_prog.c
+ 
+Building file: ../KPD_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"KPD_prog.d" -MT"KPD_prog.o" -c -o "KPD_prog.o" "../KPD_prog.c"
+Finished building: ../KPD_prog.c
+ 
+Building file: ../The_Safe.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"The_Safe.d" -MT"The_Safe.o" -c -o "The_Safe.o" "../The_Safe.c"
+Finished building: ../The_Safe.c
+ 
+Building target: The Safe.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,The Safe.map -mmcu=atmega32 -o "The Safe.elf"  ./CLCD_prog.o ./DIO_prog.o ./EEPROM_prog.o ./KPD_prog.o ./The_Safe.o   
+avr-gcc.exe: Safe.map: No such file or directory
+make: *** [The Safe.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+04:28:18 Build Failed. 1 errors, 1 warnings. (took 867ms)
+

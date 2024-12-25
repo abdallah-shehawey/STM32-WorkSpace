@@ -1,0 +1,42 @@
+19:03:22 **** Incremental Build of configuration Release for project RTOS_Event_Group ****
+make all 
+Building file: ../event group.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"event group.d" -MT"event group.o" -c -o "event group.o" "../event group.c"
+Finished building: ../event group.c
+ 
+Building target: RTOS_Event_Group.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_Event_Group.map -mmcu=atmega32 -o "RTOS_Event_Group.elf"  ./event\ group.o ./event_groups.o ./heap_2.o ./list.o ./port.o ./queue.o ./tasks.o   
+Finished building target: RTOS_Event_Group.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_Event_Group.elf  >"RTOS_Event_Group.lss"
+Finished building: RTOS_Event_Group.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_Event_Group.elf  "RTOS_Event_Group.hex"
+Finished building: RTOS_Event_Group.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex RTOS_Event_Group.elf  "RTOS_Event_Group.eep"
+Finished building: RTOS_Event_Group.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_Event_Group.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9370 bytes (28.6% Full)
+(.text + .data + .bootloader)
+
+Data:       1078 bytes (52.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:03:23 Build Finished. 0 errors, 0 warnings. (took 721ms)
+

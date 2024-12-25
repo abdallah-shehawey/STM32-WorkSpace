@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;send_data_via_I2C&apos; to &apos;I2C_Master_Send_Data&apos;" description="Rename resource &apos;send_data_via_I2C&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/send_data_via_I2C" name="I2C_Master_Send_Data" stamp="1722197221799" updateReferences="true"/>
+</session>

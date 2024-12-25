@@ -1,0 +1,4 @@
+content_types=org.eclipse.core.runtime.text|org.eclipse.core.runtime.properties|org.eclipse.core.resources.preferences|de.innot.avreclipse.contenttype.hexdump.flash|org.eclipse.ltk.core.refactoring.refactoringIndex|org.eclipse.ui.views.log.log|org.eclipse.core.runtime.xml|org.eclipse.emf.ecore.xmi|org.eclipse.emf.emof|org.eclipse.emf.ecore|org.eclipse.debug.core.launch|org.eclipse.debug.core.launch.prototype|org.eclipse.e4.content-type|org.eclipse.ant.core.antBuildFile|org.eclipse.cdt.core.cSource|org.eclipse.cdt.core.cHeader|org.eclipse.cdt.core.cxxSource|org.eclipse.cdt.core.cxxHeader|org.eclipse.team.genericeditor.diff.extension.patch|org.eclipse.cdt.core.asmSource|org.eclipse.cdt.make.core.makefile|com.st.stm32cube.ide.mpu.linux.ide.content-type.dts|org.eclipse.ltk.core.refactoring.refactoringHistory|de.innot.avreclipse.contenttype.hexdump.eeprom
+eclipse.preferences.version=1
+line_color=255,255,255
+line_width=2

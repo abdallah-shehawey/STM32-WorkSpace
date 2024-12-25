@@ -1,0 +1,20 @@
+23:38:00 **** Incremental Build of configuration Debug for project I2C_Master_Send_Data ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I2C_Master_Send_Data.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3818 bytes (11.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:38:00 Build Finished. 0 errors, 0 warnings. (took 161ms)
+

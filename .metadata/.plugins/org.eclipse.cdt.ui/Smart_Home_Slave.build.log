@@ -1,0 +1,20 @@
+02:13:46 **** Incremental Build of configuration Release for project Smart_Home_Slave ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_Slave.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12018 bytes (36.7% Full)
+(.text + .data + .bootloader)
+
+Data:        360 bytes (17.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+02:13:47 Build Finished. 0 errors, 0 warnings. (took 276ms)
+

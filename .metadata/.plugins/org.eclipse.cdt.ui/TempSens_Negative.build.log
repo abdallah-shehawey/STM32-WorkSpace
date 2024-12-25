@@ -1,0 +1,20 @@
+15:13:19 **** Incremental Build of configuration Release for project TempSens_Negative ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TempSens_Negative.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8982 bytes (27.4% Full)
+(.text + .data + .bootloader)
+
+Data:        350 bytes (17.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:13:19 Build Finished. 0 errors, 0 warnings. (took 263ms)
+

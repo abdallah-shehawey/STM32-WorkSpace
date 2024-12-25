@@ -1,0 +1,43 @@
+19:30:49 **** Incremental Build of configuration Release for project temp_sens ****
+make all 
+Building file: ../temp_sens.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"temp_sens.d" -MT"temp_sens.o" -c -o "temp_sens.o" "../temp_sens.c"
+../LCD.h:28: warning: 'send_falling_edge' declared 'static' but never defined
+Finished building: ../temp_sens.c
+ 
+Building target: temp_sens.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,temp_sens.map -mmcu=atmega32 -o "temp_sens.elf"  ./ADC_driver.o ./BUZ_program.o ./DIO.o ./LCD.o ./temp_sens.o   
+Finished building target: temp_sens.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S temp_sens.elf  >"temp_sens.lss"
+Finished building: temp_sens.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex temp_sens.elf  "temp_sens.hex"
+Finished building: temp_sens.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex temp_sens.elf  "temp_sens.eep"
+Finished building: temp_sens.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 temp_sens.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5468 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:        281 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:30:50 Build Finished. 0 errors, 1 warnings. (took 719ms)
+

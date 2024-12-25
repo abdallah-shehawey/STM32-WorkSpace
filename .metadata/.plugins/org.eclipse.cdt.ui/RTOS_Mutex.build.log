@@ -1,0 +1,20 @@
+22:58:03 **** Incremental Build of configuration Release for project RTOS_Mutex ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_Mutex.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10094 bytes (30.8% Full)
+(.text + .data + .bootloader)
+
+Data:        970 bytes (47.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:58:03 Build Finished. 0 errors, 0 warnings. (took 207ms)
+

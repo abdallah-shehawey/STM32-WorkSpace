@@ -1,0 +1,40 @@
+04:03:19 **** Incremental Build of configuration Debug for project Interrupt_with_ADC ****
+make all 
+Building file: ../interrupt with ADC.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"interrupt with ADC.d" -MT"interrupt with ADC.o" -c -o "interrupt with ADC.o" "../interrupt with ADC.c"
+In file included from ../interrupt with ADC.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../interrupt with ADC.c
+ 
+Building target: Interrupt_with_ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Interrupt_with_ADC.map -mmcu=atmega32 -o "Interrupt_with_ADC.elf"  ./ADC_driver.o ./DIO.o ./LED.o ./interrupt\ with\ ADC.o   
+Finished building target: Interrupt_with_ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Interrupt_with_ADC.elf  >"Interrupt_with_ADC.lss"
+Finished building: Interrupt_with_ADC.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Interrupt_with_ADC.elf  "Interrupt_with_ADC.hex"
+Finished building: Interrupt_with_ADC.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Interrupt_with_ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6992 bytes (21.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+04:03:20 Build Finished. 0 errors, 1 warnings. (took 1s.53ms)
+

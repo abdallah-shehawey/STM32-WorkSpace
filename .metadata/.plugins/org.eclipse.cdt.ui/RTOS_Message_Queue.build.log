@@ -1,0 +1,98 @@
+04:30:24 **** Incremental Build of configuration Release for project RTOS_Message_Queue ****
+make all 
+Building file: ../DIO.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+Finished building: ../DIO.c
+ 
+Building file: ../LCD.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD.d" -MT"LCD.o" -c -o "LCD.o" "../LCD.c"
+../LCD.c: In function 'LCD_movecursor':
+../LCD.c:118: warning: 'data' may be used uninitialized in this function
+Finished building: ../LCD.c
+ 
+Building file: ../event_groups.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"event_groups.d" -MT"event_groups.o" -c -o "event_groups.o" "../event_groups.c"
+Finished building: ../event_groups.c
+ 
+Building file: ../heap_2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"heap_2.d" -MT"heap_2.o" -c -o "heap_2.o" "../heap_2.c"
+../heap_2.c: In function 'prvHeapInit':
+../heap_2.c:297: warning: cast from pointer to integer of different size
+Finished building: ../heap_2.c
+ 
+Building file: ../keypad_driver.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"keypad_driver.d" -MT"keypad_driver.o" -c -o "keypad_driver.o" "../keypad_driver.c"
+../keypad_driver.c: In function 'keypad_u8check_press':
+../keypad_driver.c:42: warning: array subscript has type 'char'
+../keypad_driver.c:42: warning: array subscript has type 'char'
+Finished building: ../keypad_driver.c
+ 
+Building file: ../list.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"list.d" -MT"list.o" -c -o "list.o" "../list.c"
+Finished building: ../list.c
+ 
+Building file: ../message Queue.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"message Queue.d" -MT"message Queue.o" -c -o "message Queue.o" "../message Queue.c"
+../LCD.h:28: warning: 'send_falling_edge' declared 'static' but never defined
+Finished building: ../message Queue.c
+ 
+Building file: ../port.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"port.d" -MT"port.o" -c -o "port.o" "../port.c"
+Finished building: ../port.c
+ 
+Building file: ../queue.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"queue.d" -MT"queue.o" -c -o "queue.o" "../queue.c"
+Finished building: ../queue.c
+ 
+Building file: ../tasks.c
+Invoking: AVR Compiler
+avr-gcc -Wall -Os -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"tasks.d" -MT"tasks.o" -c -o "tasks.o" "../tasks.c"
+../tasks.c: In function 'prvInitialiseNewTask':
+../tasks.c:808: warning: cast from pointer to integer of different size
+../tasks.c:808: warning: cast to pointer from integer of different size
+Finished building: ../tasks.c
+ 
+Building target: RTOS_Message_Queue.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_Message_Queue.map -mmcu=atmega32 -o "RTOS_Message_Queue.elf"  ./DIO.o ./LCD.o ./event_groups.o ./heap_2.o ./keypad_driver.o ./list.o ./message\ Queue.o ./port.o ./queue.o ./tasks.o   
+Finished building target: RTOS_Message_Queue.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_Message_Queue.elf  >"RTOS_Message_Queue.lss"
+Finished building: RTOS_Message_Queue.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_Message_Queue.elf  "RTOS_Message_Queue.hex"
+Finished building: RTOS_Message_Queue.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex RTOS_Message_Queue.elf  "RTOS_Message_Queue.eep"
+Finished building: RTOS_Message_Queue.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_Message_Queue.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11212 bytes (34.2% Full)
+(.text + .data + .bootloader)
+
+Data:        983 bytes (48.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+04:30:26 Build Finished. 0 errors, 7 warnings. (took 2s.539ms)
+

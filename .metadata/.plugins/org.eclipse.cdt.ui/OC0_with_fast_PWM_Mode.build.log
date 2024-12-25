@@ -1,0 +1,20 @@
+00:45:35 **** Incremental Build of configuration Debug for project OC0_with_fast_PWM_Mode ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 OC0_with_fast_PWM_Mode.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3462 bytes (10.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:45:37 Build Finished. 0 errors, 0 warnings. (took 1s.765ms)
+

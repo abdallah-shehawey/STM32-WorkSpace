@@ -1,0 +1,20 @@
+00:19:48 **** Incremental Build of configuration Release for project RTOS_preemption ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_preemption.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10126 bytes (30.9% Full)
+(.text + .data + .bootloader)
+
+Data:        964 bytes (47.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:19:48 Build Finished. 0 errors, 0 warnings. (took 211ms)
+

@@ -1,0 +1,20 @@
+00:13:03 **** Incremental Build of configuration Debug for project Coffe_Machine ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Coffe_Machine.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     126 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:13:03 Build Finished. 0 errors, 0 warnings. (took 168ms)
+

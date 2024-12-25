@@ -1,0 +1,20 @@
+21:34:48 **** Incremental Build of configuration Debug for project slave_receive_string ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 slave_receive_string.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9900 bytes (30.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:34:48 Build Finished. 0 errors, 0 warnings. (took 166ms)
+

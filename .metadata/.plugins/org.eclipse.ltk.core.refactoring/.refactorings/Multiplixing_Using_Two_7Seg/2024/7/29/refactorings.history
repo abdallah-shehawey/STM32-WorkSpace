@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Multiplixing_Using_Two_7Seg/multiplexing using 7seg (0 to 20).c&apos; to &apos;multiplexing using 7seg.c&apos;" description="Rename resource &apos;multiplexing using 7seg (0 to 20).c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="multiplexing using 7seg (0 to 20).c" name="multiplexing using 7seg.c" stamp="1720962876957" updateReferences="true"/>
+</session>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.corrosion.run.CargoRunDelegate">
+    <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="Rust_test"/>
+    <stringAttribute key="org.eclipse.debug.core.ATTR_WORKING_DIRECTORY" value="D:/Embedded System/Embedded Codes/Eclipse WorkSpace/Rust_test"/>
+</launchConfiguration>

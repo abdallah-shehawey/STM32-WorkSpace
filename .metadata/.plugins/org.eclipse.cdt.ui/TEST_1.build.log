@@ -1,0 +1,25 @@
+23:18:04 **** Incremental Build of configuration Debug for project TEST_1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TEST_1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     436 bytes (1.3% Full)
+(.text + .data + .bootloader)
+
+Data:         10 bytes (0.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+Invoking: AVRDude
+C:\WinAVR-20100110\bin\avrdude -pm32 -cusbasp -Uflash:w:TEST_1.hex:a
+avrdude: error: could not find USB device "USBasp" with vid=0x16c0 pid=0x5dc
+make: *** [avrdudedummy] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:18:04 Build Failed. 1 errors, 0 warnings. (took 224ms)
+

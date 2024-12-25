@@ -1,0 +1,20 @@
+16:53:31 **** Incremental Build of configuration Debug for project electronic_voting_machine ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 electronic_voting_machine.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9344 bytes (28.5% Full)
+(.text + .data + .bootloader)
+
+Data:         52 bytes (2.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:53:32 Build Finished. 0 errors, 0 warnings. (took 223ms)
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Smart_Garage/App_Layer&apos; to &apos;APP_Layer&apos;" description="Rename resource &apos;App_Layer&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="App_Layer" name="APP_Layer" stamp="1728235509461" updateReferences="true"/>
+</session>

@@ -1,0 +1,64 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 13, 2024
+ *      Author: Mega
+ */
+
+#include "LED_interface.h"
+#include "GIE_interface.h"
+#include "EXTI_interface.h"
+#include "STD_TYPES.h"
+#include "STD_MACROS.h"
+
+void EXTI_LINE0_func(void);
+void EXTI_LINE1_func(void);
+void EXTI_LINE2_func(void);
+
+LED_config LED0 = {PORTA, PIN0, ACTIVE_HIGH};
+LED_config LED1 = {PORTA, PIN1, ACTIVE_HIGH};
+LED_config LED2 = {PORTA, PIN2, ACTIVE_HIGH};
+
+int main()
+{
+
+
+	LED_vInit(LED0);
+	LED_vInit(LED1);
+	LED_vInit(LED2);
+
+	GIE_vEnable();
+
+	EXTI_vEnableInterrupt(EXTI_LINE0);
+	EXTI_vEnableInterrupt(EXTI_LINE1);
+	EXTI_vEnableInterrupt(EXTI_LINE2);
+
+	EXTI_vSetSignal(EXTI_RISING_EDGE, EXTI_LINE0);
+	EXTI_vSetSignal(EXTI_RISING_EDGE, EXTI_LINE1);
+	EXTI_vSetSignal(EXTI_RISING_EDGE, EXTI_LINE2);
+
+	EXTI_vSetCallBack(EXTI_LINE0_func, EXTI_LINE0);
+	EXTI_vSetCallBack(EXTI_LINE1_func, EXTI_LINE1);
+	EXTI_vSetCallBack(EXTI_LINE2_func, EXTI_LINE2);
+
+	while (1)
+	{
+
+	}
+}
+
+
+void EXTI_LINE0_func(void)
+{
+	LED_vTog(LED0);
+}
+
+void EXTI_LINE1_func(void)
+{
+	LED_vTog(LED1);
+}
+
+void EXTI_LINE2_func(void)
+{
+	LED_vTog(LED2);
+}

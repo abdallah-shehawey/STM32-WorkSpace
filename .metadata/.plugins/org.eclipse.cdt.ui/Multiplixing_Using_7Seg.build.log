@@ -1,0 +1,17 @@
+04:07:35 **** Incremental Build of configuration Debug for project Multiplixing_Using_7Seg ****
+make all 
+Building file: ../multiplexing using 7seg (0 to 20).c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"multiplexing using 7seg (0 to 20).d" -MT"multiplexing using 7seg (0 to 20).o" -c -o "multiplexing using 7seg (0 to 20).o" "../multiplexing using 7seg (0 to 20).c"
+Finished building: ../multiplexing using 7seg (0 to 20).c
+ 
+Building target: Multiplixing_Using_7Seg.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Multiplixing_Using_7Seg.map -mmcu=atmega32 -o "Multiplixing_Using_7Seg.elf"  ./DIO.o ./multiplexing\ using\ 7seg\ (0\ to\ 20).o ./seven\ segment.o ./timer.o   
+/usr/bin/sh: -c: line 1: syntax error near unexpected token `(0'
+/usr/bin/sh: -c: line 1: `avr-gcc -Wl,-Map,Multiplixing_Using_7Seg.map -mmcu=atmega32 -o "Multiplixing_Using_7Seg.elf"  ./DIO.o ./multiplexing\ using\ 7seg\ (0\ to\ 20).o ./seven\ segment.o ./timer.o   '
+make: *** [Multiplixing_Using_7Seg.elf] Error 258
+"make all" terminated with exit code 2. Build might be incomplete.
+
+04:07:36 Build Failed. 1 errors, 0 warnings. (took 393ms)
+

@@ -1,0 +1,11 @@
+09:50:02 **** Incremental Build of configuration Debug for project DIO ****
+make all 
+Building file: ../DIO.c
+Invoking: GNU Arm Cross C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g3 -std=gnu11 -MMD -MP -MF"DIO.d" -MT"DIO.o" -c -o "DIO.o" "../DIO.c"
+/usr/bin/sh: arm-none-eabi-gcc: command not found
+make: *** [DIO.o] Error 127
+"make all" terminated with exit code 2. Build might be incomplete.
+
+09:50:03 Build Failed. 2 errors, 0 warnings. (took 1s.206ms)
+

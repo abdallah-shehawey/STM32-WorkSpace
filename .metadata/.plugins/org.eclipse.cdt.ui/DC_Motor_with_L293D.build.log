@@ -1,0 +1,40 @@
+06:14:54 **** Incremental Build of configuration Debug for project DC_Motor_with_L293D ****
+make all 
+Building file: ../DC Motor with L293D.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC Motor with L293D.d" -MT"DC Motor with L293D.o" -c -o "DC Motor with L293D.o" "../DC Motor with L293D.c"
+In file included from ../DC Motor with L293D.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DC Motor with L293D.c
+ 
+Building target: DC_Motor_with_L293D.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_Motor_with_L293D.map -mmcu=atmega32 -o "DC_Motor_with_L293D.elf"  ./DC\ Motor\ with\ L293D.o   
+Finished building target: DC_Motor_with_L293D.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_Motor_with_L293D.elf  >"DC_Motor_with_L293D.lss"
+Finished building: DC_Motor_with_L293D.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_Motor_with_L293D.elf  "DC_Motor_with_L293D.hex"
+Finished building: DC_Motor_with_L293D.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_Motor_with_L293D.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4074 bytes (12.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+06:14:55 Build Finished. 0 errors, 1 warnings. (took 671ms)
+

@@ -1,0 +1,20 @@
+14:56:10 **** Incremental Build of configuration Release for project Ultrasonic_Sensor ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Ultrasonic_Sensor.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2220 bytes (6.8% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:56:10 Build Finished. 0 errors, 0 warnings. (took 212ms)
+

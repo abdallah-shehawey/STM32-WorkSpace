@@ -1,0 +1,20 @@
+00:31:51 **** Incremental Build of configuration Debug for project LCCDD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCCDD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10194 bytes (62.2% Full)
+(.text + .data + .bootloader)
+
+Data:          9 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:31:51 Build Finished. 0 errors, 0 warnings. (took 178ms)
+

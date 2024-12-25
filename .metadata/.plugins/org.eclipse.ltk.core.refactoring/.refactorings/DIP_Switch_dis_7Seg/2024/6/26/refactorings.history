@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;DIP_Switch_dis_7Seg/DIP_Switch&apos; to &apos;DIP_Switch.c&apos;" description="Rename resource &apos;DIP_Switch&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DIP_Switch" name="DIP_Switch.c" stamp="1719610641432" updateReferences="true"/>
+</session>

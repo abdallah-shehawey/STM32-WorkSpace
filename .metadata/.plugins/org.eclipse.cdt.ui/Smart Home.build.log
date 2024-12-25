@@ -1,0 +1,86 @@
+22:35:33 **** Build of configuration Debug for project Smart Home ****
+make all 
+Building file: ../MCAL_Layer/TIMER/TIMER_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/TIMER/TIMER_program.d" -MT"MCAL_Layer/TIMER/TIMER_program.o" -c -o "MCAL_Layer/TIMER/TIMER_program.o" "../MCAL_Layer/TIMER/TIMER_program.c"
+Finished building: ../MCAL_Layer/TIMER/TIMER_program.c
+ 
+Building file: ../MCAL_Layer/SPI/SPI_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/SPI/SPI_prog.d" -MT"MCAL_Layer/SPI/SPI_prog.o" -c -o "MCAL_Layer/SPI/SPI_prog.o" "../MCAL_Layer/SPI/SPI_prog.c"
+Finished building: ../MCAL_Layer/SPI/SPI_prog.c
+ 
+Building file: ../MCAL_Layer/GIE/GIE_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/GIE/GIE_prog.d" -MT"MCAL_Layer/GIE/GIE_prog.o" -c -o "MCAL_Layer/GIE/GIE_prog.o" "../MCAL_Layer/GIE/GIE_prog.c"
+Finished building: ../MCAL_Layer/GIE/GIE_prog.c
+ 
+Building file: ../MCAL_Layer/EEPROM/EEPROM_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/EEPROM/EEPROM_prog.d" -MT"MCAL_Layer/EEPROM/EEPROM_prog.o" -c -o "MCAL_Layer/EEPROM/EEPROM_prog.o" "../MCAL_Layer/EEPROM/EEPROM_prog.c"
+Finished building: ../MCAL_Layer/EEPROM/EEPROM_prog.c
+ 
+Building file: ../MCAL_Layer/DIO/DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/DIO/DIO_prog.d" -MT"MCAL_Layer/DIO/DIO_prog.o" -c -o "MCAL_Layer/DIO/DIO_prog.o" "../MCAL_Layer/DIO/DIO_prog.c"
+Finished building: ../MCAL_Layer/DIO/DIO_prog.c
+ 
+Building file: ../MCAL_Layer/ADC/ADC_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/ADC/ADC_prog.d" -MT"MCAL_Layer/ADC/ADC_prog.o" -c -o "MCAL_Layer/ADC/ADC_prog.o" "../MCAL_Layer/ADC/ADC_prog.c"
+Finished building: ../MCAL_Layer/ADC/ADC_prog.c
+ 
+Building file: ../HAL_Layer/SW/SW_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/SW/SW_prog.d" -MT"HAL_Layer/SW/SW_prog.o" -c -o "HAL_Layer/SW/SW_prog.o" "../HAL_Layer/SW/SW_prog.c"
+Finished building: ../HAL_Layer/SW/SW_prog.c
+ 
+Building file: ../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.d" -MT"HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.o" -c -o "HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.o" "../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c"
+../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c: In function 'SM_vTimer1Degree':
+../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c:30: warning: comparisons like X<=Y<=Z do not have their mathematical meaning
+../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c:34: warning: comparisons like X<=Y<=Z do not have their mathematical meaning
+Finished building: ../HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.c
+ 
+Building file: ../HAL_Layer/LM35/LM35_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/LM35/LM35_prog.d" -MT"HAL_Layer/LM35/LM35_prog.o" -c -o "HAL_Layer/LM35/LM35_prog.o" "../HAL_Layer/LM35/LM35_prog.c"
+Finished building: ../HAL_Layer/LM35/LM35_prog.c
+ 
+Building file: ../HAL_Layer/LED/LED_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/LED/LED_prog.d" -MT"HAL_Layer/LED/LED_prog.o" -c -o "HAL_Layer/LED/LED_prog.o" "../HAL_Layer/LED/LED_prog.c"
+Finished building: ../HAL_Layer/LED/LED_prog.c
+ 
+Building file: ../HAL_Layer/KPD/KPD_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/KPD/KPD_prog.d" -MT"HAL_Layer/KPD/KPD_prog.o" -c -o "HAL_Layer/KPD/KPD_prog.o" "../HAL_Layer/KPD/KPD_prog.c"
+In file included from ../HAL_Layer/KPD/KPD_prog.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL_Layer/KPD/KPD_prog.c
+ 
+Building file: ../HAL_Layer/CLCD/CLCD_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/CLCD/CLCD_prog.d" -MT"HAL_Layer/CLCD/CLCD_prog.o" -c -o "HAL_Layer/CLCD/CLCD_prog.o" "../HAL_Layer/CLCD/CLCD_prog.c"
+In file included from ../HAL_Layer/CLCD/CLCD_prog.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL_Layer/CLCD/CLCD_prog.c
+ 
+Building file: ../APP_Layer/Smart_Home.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP_Layer/Smart_Home.d" -MT"APP_Layer/Smart_Home.o" -c -o "APP_Layer/Smart_Home.o" "../APP_Layer/Smart_Home.c"
+In file included from ../APP_Layer/Smart_Home.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP_Layer/Smart_Home.c:28: warning: return type of 'main' is not 'int'
+Finished building: ../APP_Layer/Smart_Home.c
+ 
+Building target: Smart Home.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart Home.map -mmcu=atmega32 -o "Smart Home.elf"  ./MCAL_Layer/TIMER/TIMER_program.o  ./MCAL_Layer/SPI/SPI_prog.o  ./MCAL_Layer/GIE/GIE_prog.o  ./MCAL_Layer/EEPROM/EEPROM_prog.o  ./MCAL_Layer/DIO/DIO_prog.o  ./MCAL_Layer/ADC/ADC_prog.o  ./HAL_Layer/SW/SW_prog.o  ./HAL_Layer/SERVO_MOTOR/Servo_Motor_prog.o  ./HAL_Layer/LM35/LM35_prog.o  ./HAL_Layer/LED/LED_prog.o  ./HAL_Layer/KPD/KPD_prog.o  ./HAL_Layer/CLCD/CLCD_prog.o  ./APP_Layer/Smart_Home.o   
+avr-gcc.exe: Home.map: No such file or directory
+make: *** [Smart Home.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+22:35:35 Build Failed. 1 errors, 6 warnings. (took 1s.836ms)
+

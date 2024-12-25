@@ -1,0 +1,40 @@
+22:28:55 **** Incremental Build of configuration Debug for project DIP_Switch ****
+make all 
+Building file: ../DIP_Switch.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIP_Switch.d" -MT"DIP_Switch.o" -c -o "DIP_Switch.o" "../DIP_Switch.c"
+In file included from ../DIP_Switch.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DIP_Switch.c
+ 
+Building target: DIP_Switch.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIP_Switch.map -mmcu=atmega32 -o "DIP_Switch.elf"  ./DIP_Switch.o   
+Finished building target: DIP_Switch.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIP_Switch.elf  >"DIP_Switch.lss"
+Finished building: DIP_Switch.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIP_Switch.elf  "DIP_Switch.hex"
+Finished building: DIP_Switch.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIP_Switch.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3504 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:28:56 Build Finished. 0 errors, 1 warnings. (took 1s.3ms)
+

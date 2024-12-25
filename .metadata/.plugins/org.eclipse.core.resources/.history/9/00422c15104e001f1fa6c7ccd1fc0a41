@@ -1,0 +1,86 @@
+#include <avr/io.h>
+#include <time.h>
+
+int main()
+{
+	unsigned int op_1 = 0, op_2 = 0, op_code = 0, result = 0, ISA = 0;
+  SSDLT_enuInit(SSD_AstrSegConfig);
+  SSDLT_enuDisplayNum(0, 0);
+  SSDLT_enuDisplayNum(1, 0);
+  DDRD = 0x00;
+  PORTD = 0xff;
+  DDRB = 0xff;
+
+
+  while(1)
+  {
+
+
+
+
+    /**
+     * Using 8 way DIP switch, and 2 seven segment displays Build this application:
+     * ISA application specification:
+     *   - BIT7:6: for OP code.
+     *     if OP code = 00 then -> summation operation.
+     *     if OP code = 01 then -> subtraction operation.
+     *     if OP code = 10 then -> multiplication operation.
+     *     if OP code = 11 then -> Division operation.
+     *   - BIT5:4:3: for operand 2.
+     *   - BIT:2:1:0: for operand 1.
+     *
+     *   for example:
+     *    if instruction is 01101111 then -> display 12 on seven segment. why?
+     *    00 -> summation operation.
+     *    101 -> operand 2 is 5 in decimal.
+     *    111 -> operand 1 is 7 in decimal.
+     *    So. the result is 12.
+     */
+
+
+
+
+
+
+
+    
+    op_code = (ISA >> 6) & 0x03; //0b11000000 & 01101111 -> 01000000 -> 00000010
+    //op_code = op_code & 0x03;
+    op_2 = (0x38 & ISA) >> 3; //0b00111000 & 01101111 -> 00101000 -> 00000101
+    op_1 = 0x07 & ISA; //0b00000111 & 01101111 -> 00000111 -> 00000111;
+
+    if(op_code == 0)
+    {
+      result = op_1 + op_2;
+    }
+    else if(op_code == 1)
+    {
+      result = op_1 - op_2;
+    }
+    else if(op_code == 2)
+    {
+      result = op_1 * op_2;
+    }
+    else if(op_code == 3)
+    {
+      if(op_2 != 0)
+      {
+        result = op_1 / op_2;
+      }
+      else
+      {
+        result = 0;
+      }
+    }
+    else
+    {
+
+    }
+
+    PORTB = ISA;
+    SSDLT_enuDisplayNum(0, result % 10);
+    SSDLT_enuDisplayNum(1, result / 10);
+
+  }
+    return 0;
+}

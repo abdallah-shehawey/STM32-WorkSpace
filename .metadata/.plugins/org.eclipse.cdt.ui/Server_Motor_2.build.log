@@ -1,0 +1,20 @@
+19:26:40 **** Incremental Build of configuration Release for project Server_Motor_2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Server_Motor_2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     204 bytes (0.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:26:40 Build Finished. 0 errors, 0 warnings. (took 148ms)
+

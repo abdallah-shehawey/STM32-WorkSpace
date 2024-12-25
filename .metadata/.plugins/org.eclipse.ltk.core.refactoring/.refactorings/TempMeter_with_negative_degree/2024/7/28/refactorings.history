@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Tempmeter_with_negative_temp/temperature sensor using LCD.c&apos; to &apos;TempMeter_with_negative_degree.c&apos;" description="Rename resource &apos;temperature sensor using LCD.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="temperature sensor using LCD.c" name="TempMeter_with_negative_degree.c" stamp="1720360148846" updateReferences="true"/>
+</session>

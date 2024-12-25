@@ -1,0 +1,24 @@
+20:28:55 **** Incremental Build of configuration Debug for project Lecture_3_Test ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:116:17: warning: initialization of 'int' from 'const int *' makes integer from pointer without a cast [-Wint-conversion]
+  116 |         int x = &var;
+      |                 ^
+../Src/main.c:116:13: warning: unused variable 'x' [-Wunused-variable]
+  116 |         int x = &var;
+      |             ^
+arm-none-eabi-gcc -o "Lecture_3_Test.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\Embedded System\Embedded Codes\STM32 WorkSpace\Lecture_3_Test\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lecture_3_Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lecture_3_Test.elf
+ 
+arm-none-eabi-size  Lecture_3_Test.elf 
+arm-none-eabi-objdump -h -S Lecture_3_Test.elf  > "Lecture_3_Test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6588	    160	   1904	   8652	   21cc	Lecture_3_Test.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lecture_3_Test.list
+ 
+
+20:28:55 Build Finished. 0 errors, 2 warnings. (took 780ms)
+

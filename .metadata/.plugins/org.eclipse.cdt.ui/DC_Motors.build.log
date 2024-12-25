@@ -1,0 +1,40 @@
+21:15:41 **** Incremental Build of configuration Debug for project DC_Motors ****
+make all 
+Building file: ../DC motors.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DC motors.d" -MT"DC motors.o" -c -o "DC motors.o" "../DC motors.c"
+In file included from ../DC motors.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../DC motors.c
+ 
+Building target: DC_Motors.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DC_Motors.map -mmcu=atmega32 -o "DC_Motors.elf"  ./DC\ motors.o   
+Finished building target: DC_Motors.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DC_Motors.elf  >"DC_Motors.lss"
+Finished building: DC_Motors.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DC_Motors.elf  "DC_Motors.hex"
+Finished building: DC_Motors.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DC_Motors.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3554 bytes (10.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:15:42 Build Finished. 0 errors, 1 warnings. (took 670ms)
+

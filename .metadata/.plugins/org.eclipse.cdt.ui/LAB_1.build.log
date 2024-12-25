@@ -1,0 +1,16 @@
+19:56:46 **** Incremental Build of configuration Debug for project LAB_1 ****
+make all 
+Building file: ../LAB_1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LAB_1.d" -MT"LAB_1.o" -c -o "LAB_1.o" "../LAB_1.c"
+In file included from ../LAB_1.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LAB_1.c: In function 'main':
+../LAB_1.c:16: error: 'o' undeclared (first use in this function)
+../LAB_1.c:16: error: (Each undeclared identifier is reported only once
+../LAB_1.c:16: error: for each function it appears in.)
+make: *** [LAB_1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:56:46 Build Failed. 2 errors, 1 warnings. (took 205ms)
+

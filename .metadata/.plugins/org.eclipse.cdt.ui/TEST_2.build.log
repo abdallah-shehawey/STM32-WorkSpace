@@ -1,0 +1,27 @@
+15:14:38 **** Incremental Build of configuration Debug for project TEST_2 ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+../DIO_prog.c: In function 'DIO_vSetPinDir':
+../DIO_prog.c:23: error: 'DDRA' undeclared (first use in this function)
+../DIO_prog.c:23: error: (Each undeclared identifier is reported only once
+../DIO_prog.c:23: error: for each function it appears in.)
+../DIO_prog.c:26: error: 'DDRB' undeclared (first use in this function)
+../DIO_prog.c:29: error: 'DDRC' undeclared (first use in this function)
+../DIO_prog.c:32: error: 'DDRD' undeclared (first use in this function)
+../DIO_prog.c: In function 'DIO_vWritePinVal':
+../DIO_prog.c:63: error: 'DDRA' undeclared (first use in this function)
+../DIO_prog.c:66: error: 'DDRB' undeclared (first use in this function)
+../DIO_prog.c:69: error: 'DDRC' undeclared (first use in this function)
+../DIO_prog.c:72: error: 'DDRD' undeclared (first use in this function)
+../DIO_prog.c: In function 'DIO_u8ReadPinVal':
+../DIO_prog.c:102: error: 'DDRA' undeclared (first use in this function)
+../DIO_prog.c:105: error: 'DDRB' undeclared (first use in this function)
+../DIO_prog.c:108: error: 'DDRC' undeclared (first use in this function)
+../DIO_prog.c:111: error: 'DDRD' undeclared (first use in this function)
+make: *** [DIO_prog.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+15:14:38 Build Failed. 13 errors, 0 warnings. (took 203ms)
+
