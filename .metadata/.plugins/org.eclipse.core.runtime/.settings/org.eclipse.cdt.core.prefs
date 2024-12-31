@@ -1,4 +1,5 @@
 build.all.configs.enabled=false
+doctool/workspace.default=org.eclipse.cdt.ui.doxygen
 doxygen/doxygen_new_line_after_brief=true
 doxygen/doxygen_use_brief_tag=false
 doxygen/doxygen_use_javadoc_tags=true

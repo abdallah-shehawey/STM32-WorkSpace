@@ -64,10 +64,10 @@
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialog">
-		<item key="DIALOG_X_ORIGIN" value="595"/>
-		<item key="DIALOG_Y_ORIGIN" value="264"/>
-		<item key="DIALOG_WIDTH" value="1652"/>
-		<item key="DIALOG_HEIGHT" value="1028"/>
+		<item key="DIALOG_X_ORIGIN" value="860"/>
+		<item key="DIALOG_Y_ORIGIN" value="216"/>
+		<item key="DIALOG_WIDTH" value="1296"/>
+		<item key="DIALOG_HEIGHT" value="994"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI Black|10.2|0|WINDOWS|1|-17|0|0|0|900|0|0|0|0|3|2|1|34|Segoe UI Black"/>
 	</section>
 </section>

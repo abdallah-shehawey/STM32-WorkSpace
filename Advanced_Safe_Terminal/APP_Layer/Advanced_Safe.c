@@ -23,25 +23,25 @@ volatile u8 Error_State, KPD_Press                  ;
 
 void main(void)
 {
-	/* Initialize CLCD On PORTB And 4Bit Mode And Connected on Low Nibble */
-	CLCD_vInit();
-	/* Initialize USART to communicate with laptop */
-	USART_vInit();
+  /* Initialize CLCD On PORTB And 4Bit Mode And Connected on Low Nibble */
+  CLCD_vInit();
+  /* Initialize USART to communicate with laptop */
+  USART_vInit();
 
-	USART_u8SendStringSynch("Welcome");
-	USART_u8SendData(0X0D);
-	_delay_ms(500);
-	/*
+  USART_u8SendStringSynch("Welcome");
+  USART_u8SendData(0X0D);
+  _delay_ms(500);
+  /*
 	First check if it first sign in or not
 	check if there is time out or not
 	check how many tries left
-	 */
-	EEPROM_Check();
-	while (1)
-	{
-		Sign_In();
-		_delay_ms(1000);
-	}
+   */
+  EEPROM_Check();
+  while (1)
+  {
+    Sign_In();
+    _delay_ms(1000);
+  }
 }
 
 //======================================================================================================================================//

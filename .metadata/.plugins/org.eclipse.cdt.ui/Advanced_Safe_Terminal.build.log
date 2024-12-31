@@ -1,12 +1,101 @@
-11:24:47 **** Incremental Build of configuration Release for project Advanced_Safe_Terminal ****
+23:55:02 **** Build of configuration Debug for project Advanced_Safe_Terminal ****
 make all 
+Building file: ../MCAL_Layer/USART/USART_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/USART/USART_prog.d" -MT"MCAL_Layer/USART/USART_prog.o" -c -o "MCAL_Layer/USART/USART_prog.o" "../MCAL_Layer/USART/USART_prog.c"
+In file included from ../MCAL_Layer/USART/USART_prog.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../MCAL_Layer/USART/USART_prog.c
+ 
+Building file: ../MCAL_Layer/EEPROM/EEPROM_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/EEPROM/EEPROM_prog.d" -MT"MCAL_Layer/EEPROM/EEPROM_prog.o" -c -o "MCAL_Layer/EEPROM/EEPROM_prog.o" "../MCAL_Layer/EEPROM/EEPROM_prog.c"
+Finished building: ../MCAL_Layer/EEPROM/EEPROM_prog.c
+ 
+Building file: ../MCAL_Layer/DIO/DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"MCAL_Layer/DIO/DIO_prog.d" -MT"MCAL_Layer/DIO/DIO_prog.o" -c -o "MCAL_Layer/DIO/DIO_prog.o" "../MCAL_Layer/DIO/DIO_prog.c"
+Finished building: ../MCAL_Layer/DIO/DIO_prog.c
+ 
+Building file: ../HAL_Layer/CLCD/CLCD_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"HAL_Layer/CLCD/CLCD_prog.d" -MT"HAL_Layer/CLCD/CLCD_prog.o" -c -o "HAL_Layer/CLCD/CLCD_prog.o" "../HAL_Layer/CLCD/CLCD_prog.c"
+In file included from ../HAL_Layer/CLCD/CLCD_prog.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL_Layer/CLCD/CLCD_prog.c
+ 
+Building file: ../APP_Layer/Advanced_Safe.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP_Layer/Advanced_Safe.d" -MT"APP_Layer/Advanced_Safe.o" -c -o "APP_Layer/Advanced_Safe.o" "../APP_Layer/Advanced_Safe.c"
+In file included from ../APP_Layer/Advanced_Safe.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP_Layer/Advanced_Safe.c:24: warning: return type of 'main' is not 'int'
+../APP_Layer/Advanced_Safe.c: In function 'main':
+../APP_Layer/Advanced_Safe.c:31: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+Finished building: ../APP_Layer/Advanced_Safe.c
+ 
+Building file: ../APP_Layer/Security.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"APP_Layer/Security.d" -MT"APP_Layer/Security.o" -c -o "APP_Layer/Security.o" "../APP_Layer/Security.c"
+In file included from ../APP_Layer/Security.c:8:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../APP_Layer/Security.c: In function 'EEPROM_Check':
+../APP_Layer/Security.c:51: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c:61: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c: In function 'UserName_Set':
+../APP_Layer/Security.c:81: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c:83: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c:94: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c:96: warning: pointer targets in passing argument 1 of 'USART_u8SendStringSynch' differ in signedness
+../APP_Layer/Security.c:104: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/Security.c: In function 'PassWord_Set':
+../APP_Layer/Security.c:179: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:181: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:184: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:195: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:197: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:200: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:204: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/Security.c:215: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:217: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:220: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:229: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/Security.c: In function 'UserName_Check':
+../APP_Layer/Security.c:310: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:317: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/Security.c: In function 'PassWord_Check':
+../APP_Layer/Security.c:414: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:422: warning: passing argument 1 of 'USART_u8ReceiveData' discards qualifiers from pointer target type
+../APP_Layer/Security.c: In function 'Sign_In':
+../APP_Layer/Security.c:521: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:523: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:531: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:545: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c:547: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+../APP_Layer/Security.c: In function 'Error_TimeOut':
+../APP_Layer/Security.c:558: warning: pointer targets in passing argument 1 of 'CLCD_vSendString' differ in signedness
+Finished building: ../APP_Layer/Security.c
+ 
+Building target: Advanced_Safe_Terminal.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Advanced_Safe_Terminal.map -mmcu=atmega32 -o "Advanced_Safe_Terminal.elf"  ./MCAL_Layer/USART/USART_prog.o  ./MCAL_Layer/EEPROM/EEPROM_prog.o  ./MCAL_Layer/DIO/DIO_prog.o  ./HAL_Layer/CLCD/CLCD_prog.o  ./APP_Layer/Advanced_Safe.o ./APP_Layer/Security.o   
+Finished building target: Advanced_Safe_Terminal.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Advanced_Safe_Terminal.elf  >"Advanced_Safe_Terminal.lss"
+Finished building: Advanced_Safe_Terminal.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Advanced_Safe_Terminal.elf  "Advanced_Safe_Terminal.hex"
+Finished building: Advanced_Safe_Terminal.hex
+ 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 Advanced_Safe_Terminal.elf
 AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:   10504 bytes (32.1% Full)
+Program:   18938 bytes (57.8% Full)
 (.text + .data + .bootloader)
 
 Data:        603 bytes (29.4% Full)
@@ -16,5 +105,5 @@ Data:        603 bytes (29.4% Full)
 Finished building: sizedummy
  
 
-11:24:48 Build Finished. 0 errors, 0 warnings. (took 228ms)
+23:55:04 Build Finished. 0 errors, 34 warnings. (took 2s.0ms)
 

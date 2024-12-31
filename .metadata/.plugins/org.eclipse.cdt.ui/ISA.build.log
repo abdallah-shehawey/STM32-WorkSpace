@@ -1,4 +1,4 @@
-21:11:02 **** Incremental Build of configuration Debug for project ISA ****
+17:08:27 **** Incremental Build of configuration Debug for project ISA ****
 make all 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega32 ISA.elf
@@ -16,5 +16,5 @@ Data:         23 bytes (1.1% Full)
 Finished building: sizedummy
  
 
-21:11:02 Build Finished. 0 errors, 0 warnings. (took 174ms)
+17:08:27 Build Finished. 0 errors, 0 warnings. (took 156ms)
 

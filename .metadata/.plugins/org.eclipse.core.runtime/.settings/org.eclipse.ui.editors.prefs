@@ -1,4 +1,7 @@
-AbstractTextEditor.Color.SelectionBackground=33,66,131
+AbstractTextEditor.Color.Background=28,28,28
+AbstractTextEditor.Color.Background.SystemDefault=false
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
 comment_stylePreferences=NONE
 comment_text=false
 coverage_stylePreferences=NONE
@@ -7,6 +10,7 @@ currentLine=false
 eclipse.preferences.version=1
 highlight.text.style=NONE
 hoverReplaceMode=-1
+lineNumberColor=119,145,154
 nocoverage_stylePreferences=NONE
 nocoverage_text=false
 showCarriageReturn=false
